@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astronomia con la NASA</title>
+    <!-- Ícono de pestaña (favicon) -->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="images/favicon-16x16.png"
     />
+    <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Encabezado del sitio con menú de navegación -->
     <header>
       <div class="container">
         <h1>Astronomia con la NASA</h1>
         <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Servicios</a>
-          <a href="#">Contacto</a>
+          <!-- Menú con submenú desplegable -->
+          <ul class="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="#">Divulgaciones</a>
+              <ul class="submenu">
+                <li><a href="#feature-one">Foto del día</a></li>
+                <li><a href="#">Luis 1</a></li>
+                <li><a href="#feature-two">Luis 2</a></li>
+                <li><a href="#">Juan 1</a></li>
+                <li><a href="#">Juan 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <!-- Sección de inicio con fondo destacado y texto inicial -->
+    <section class="hero" id="home">
       <div class="hero-container">
         <h2>Erase un vez el espacio</h2>
         <p>
@@ -34,11 +50,14 @@
       </div>
     </section>
 
+    <!-- Contenido principal del sitio -->
     <main>
+      <!-- Sección de contenido destacado -->
       <section class="section-features">
         <div class="container-features">
+          <!-- Artículo destacado -->
           <!--Usar Cards como en este article para todos los articles class="feature"-->
-          <article class="feature">
+          <article class="feature" id="feature-one">
             <h2>Foto astronomica del dia</h2>
             <hr />
             <div class="card">
@@ -61,6 +80,7 @@
               </div>
             </div>
           </article>
+          <!-- Artículo destacado -->
           <article class="feature">
             <h3>Seccion de Luis</h3>
             <p>
@@ -70,7 +90,8 @@
               veritatis voluptates doloremque.
             </p>
           </article>
-          <article class="feature">
+          <!-- Artículo destacado -->
+          <article class="feature" id="feature-two">
             <h3>Seccion de Luis</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -79,6 +100,7 @@
               veritatis voluptates doloremque.
             </p>
           </article>
+          <!-- Artículo destacado -->
           <article class="feature">
             <h3>Seccion de Juan</h3>
             <p>
@@ -88,6 +110,7 @@
               animi minus aut.
             </p>
           </article>
+          <!-- Artículo destacado -->
           <article class="feature">
             <h3>Seccion de Juan</h3>
             <p>
@@ -101,6 +124,7 @@
       </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
       <div class="container">
         <p>Todos los derechos reservados.</p>
