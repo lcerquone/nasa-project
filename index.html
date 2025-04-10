@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astronomia con la NASA</title>
+    <title>Astronomía con la NASA</title>
     <!-- Ícono de pestaña (favicon) -->
     <link
       rel="icon"
@@ -18,7 +18,7 @@
     <!-- Encabezado del sitio con menú de navegación -->
     <header>
       <div class="container">
-        <h1>Astronomia con la NASA</h1>
+        <h1>Astronomía con la NASA</h1>
         <nav>
           <!-- Menú con submenú desplegable -->
           <ul class="menu">
@@ -27,10 +27,10 @@
               <a href="#">Divulgaciones</a>
               <ul class="submenu">
                 <li><a href="#feature-one">Foto del día</a></li>
-                <li><a href="#">Luis 1</a></li>
-                <li><a href="#feature-two">Luis 2</a></li>
-                <li><a href="#">Juan 1</a></li>
-                <li><a href="#">Juan 2</a></li>
+                <li><a href="#feature-two">Asteroides</a></li>
+                <li><a href="#feature-three">Exoplanetas</a></li>
+                <li><a href="#">Seccion 4</a></li>
+                <li><a href="#">Seccion 5</a></li>
               </ul>
             </li>
             <li><a href="#">Contacto</a></li>
@@ -42,10 +42,10 @@
     <!-- Sección de inicio con fondo destacado y texto inicial -->
     <section class="hero" id="home">
       <div class="hero-container">
-        <h2>Erase un vez el espacio</h2>
+        <h2>Érase un vez el espacio...</h2>
         <p>
-          Astronomia con la NASA es una plataforma educativa que divulda datos
-          astronomicos proporcionados por la NASA
+          Astronomía con la NASA es una plataforma educativa que divulda datos
+          astronómicos proporcionados por la NASA.
         </p>
       </div>
     </section>
@@ -58,14 +58,19 @@
           <!-- Artículo destacado -->
           <!--Usar Cards como en este article para todos los articles class="feature"-->
           <article class="feature" id="feature-one">
-            <h2>Foto astronomica del dia</h2>
+            <h2>Foto astronómica del dia</h2>
             <hr />
             <div class="card">
-              <img
-                class="card-img"
-                src="images/Webb_s_portrait_of_the_Pillars_of_Creation_NIRCam_5.jpg"
-                alt="Pilares de la Creacion"
-              />
+              <a
+                href="images/Webb_s_portrait_of_the_Pillars_of_Creation_NIRCam_5.jpg"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="images/Webb_s_portrait_of_the_Pillars_of_Creation_NIRCam_5.jpg"
+                  alt="Pilares de la Creacion"
+                />
+              </a>
               <div class="card-container">
                 <h3>Pilares de la Creación</h3>
                 <p>
@@ -81,38 +86,65 @@
             </div>
           </article>
           <!-- Artículo destacado -->
-          <article class="feature">
-            <h3>Seccion de Luis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus fugiat cumque aspernatur, maiores repellendus quaerat
-              rerum iste aut cum ipsum id ex inventore quis laborum eius! Nemo
-              veritatis voluptates doloremque.
-            </p>
-          </article>
-          <!-- Artículo destacado -->
           <article class="feature" id="feature-two">
-            <h3>Seccion de Luis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus fugiat cumque aspernatur, maiores repellendus quaerat
-              rerum iste aut cum ipsum id ex inventore quis laborum eius! Nemo
-              veritatis voluptates doloremque.
-            </p>
+            <h2>Asteroides cercanos a la Tierra</h2>
+            <hr />
+            <div class="card">
+              <a href="images/Cometa_Halley.jpg" target="_blank">
+                <img
+                  class="card-img"
+                  src="images/Cometa_Halley.jpg"
+                  alt="Cometa Halley"
+                />
+              </a>
+              <div class="card-container">
+                <h3>Cometa Halley</h3>
+                <p>
+                  El Cometa Halley es uno de los cometas más famosos y
+                  brillantes que se hacen visibles desde la Tierra a simple
+                  vista. Su nombre oficial es 1P/Halley, donde "1P" indica que
+                  fue el primer cometa periódico identificado.<br />
+                  La Tierra atraviesa dos corrientes de escombros dejadas por el
+                  Cometa Halley en su órbita, lo que provoca dos lluvias de
+                  meteoros anuales: las Eta Acuáridas en mayo y las Oriónidas en
+                  octubre.
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- Artículo destacado -->
+          <article class="feature" id="feature-three">
+            <h2>Archivo de Exoplanetas de la NASA</h2>
+            <hr />
+            <div class="card">
+              <a
+                href="images/150723163303_sp_kepler-452b__624x351_nasa.jpg.webp"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="images/150723163303_sp_kepler-452b__624x351_nasa.jpg.webp"
+                  alt="Kepler-452b"
+                />
+              </a>
+              <div class="card-container">
+                <h3>Kepler-452b</h3>
+                <p>
+                  El exoplaneta Kepler-452b fue el primer planeta de tamaño
+                  cercano a la Tierra descubierto orbitando dentro de la zona
+                  habitable de una estrella muy similar a nuestro Sol. Fue
+                  anunciado por la NASA el 23 de julio de 2015, basándose en
+                  datos del telescopio espacial Kepler. <br />
+                  Debido a su tamaño, órbita dentro de la zona habitable y la
+                  similitud de su estrella con el Sol, Kepler-452b generó gran
+                  interés como un posible candidato para albergar vida.
+                </p>
+              </div>
+            </div>
           </article>
           <!-- Artículo destacado -->
           <article class="feature">
-            <h3>Seccion de Juan</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo
-              nisi ea dolore eligendi, id praesentium nesciunt qui. Ducimus
-              veritatis consequatur cumque dolore aspernatur, sunt ipsa incidunt
-              animi minus aut.
-            </p>
-          </article>
-          <!-- Artículo destacado -->
-          <article class="feature">
-            <h3>Seccion de Juan</h3>
+            <h3>Seccion 4</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo
               nisi ea dolore eligendi, id praesentium nesciunt qui. Ducimus
