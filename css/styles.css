@@ -197,7 +197,7 @@ hr {
   white-space: nowrap;
 }
 
-/* Al hacer hover agrega el color de fondo a la etiqueta a del li */
+/* Al hacer hover agrega un color de fondo a la etiqueta a del li */
 .submenu li a:hover {
   background: #666;
 }
