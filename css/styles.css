@@ -11,7 +11,7 @@
 /* Agregar que hace */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 7rem;
 }
 
 /* Uso de la fuente Poppins proporcionada por Google */
@@ -106,7 +106,7 @@ header .container {
 
 /* Agregar que hace */
 footer {
-  background: #222;
+  background: #333;
   color: #ccc;
   text-align: center;
   padding: 1rem 0;
@@ -200,4 +200,51 @@ hr {
 /* Agregar que hace */
 .submenu li a:hover {
   background: #666;
+}
+
+/* Sección 5 en tres columnas usando Flexbox */
+.feature-flex {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.feature-flex h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Contenedor con Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.flex-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 30%;
+  min-width: 280px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.flex-card:hover {
+  transform: translateY(-5px);
+}
+
+.flex-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
