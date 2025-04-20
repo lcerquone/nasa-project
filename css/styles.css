@@ -1,3 +1,4 @@
+/* Agregar que hace */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Uso de border-box para que se adapten bien las dimensiones y respete la estructura de la página */
@@ -7,6 +8,7 @@
   padding: 0;
 }
 
+/* Agregar que hace */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
@@ -20,6 +22,7 @@ body {
   color: #333;
 }
 
+/* Agregar que hace */
 .container {
   width: 90%;
   max-width: 100%;
@@ -27,7 +30,10 @@ body {
   padding: 0.5rem 0;
 }
 
+/* Agregar que hace */
 .hero-container {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   max-width: 100%;
   margin: auto;
@@ -45,14 +51,16 @@ header {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+/* Agregar que hace */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Agregar que hace */
 .hero {
-  background-image: url(../images/mars-2051748_640.png);
+  background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/mars-2051748_640.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -61,6 +69,7 @@ header .container {
   text-align: center;
 }
 
+/* Agregar que hace */
 .btn {
   display: inline-block;
   margin-top: 2%;
@@ -72,6 +81,7 @@ header .container {
   font-weight: bold;
 }
 
+/* Agregar que hace */
 .section-features {
   display: flex;
   padding: 0.5rem;
@@ -94,6 +104,7 @@ header .container {
   text-align: justify;
 }
 
+/* Agregar que hace */
 footer {
   background: #222;
   color: #ccc;
@@ -101,8 +112,10 @@ footer {
   padding: 1rem 0;
 }
 
+/* Agregar que hace */
 .card-img {
   width: 100%;
+  height: 300px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -118,10 +131,12 @@ footer {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Agregar que hace */
 .card-container {
   padding: 16px 24px;
 }
 
+/* Agregar que hace */
 hr {
   border: 0;
   height: 2px;
@@ -129,6 +144,7 @@ hr {
   margin: 20px 0;
 }
 
+/* Agregar que hace */
 .menu {
   list-style: none;
   display: flex;
@@ -136,10 +152,12 @@ hr {
   padding: 0;
 }
 
+/* Agregar que hace */
 .menu li {
   position: relative;
 }
 
+/* Agregar que hace */
 .menu a {
   color: white;
   text-decoration: none;
@@ -147,6 +165,7 @@ hr {
   display: block;
 }
 
+/* Agregar que hace */
 .menu a:hover {
   background: #555;
 }
@@ -166,16 +185,19 @@ hr {
   z-index: 1001;
 }
 
+/* Agregar que hace */
 .has-submenu:hover .submenu {
   display: block;
 }
 
+/* Agregar que hace */
 .submenu li a {
   padding: 0.75rem 1rem;
   color: white;
   white-space: nowrap;
 }
 
+/* Agregar que hace */
 .submenu li a:hover {
   background: #666;
 }
