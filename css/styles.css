@@ -60,7 +60,12 @@ header .container {
 
 /* Sección principal con imagen de fondo y superposición oscura */
 .hero {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/mars-2051748_640.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/mars-2051748_640.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -125,6 +130,7 @@ footer {
   transition: 0.3s;
   border-radius: 5px;
   height: 90%;
+  background-color: white;
 }
 
 /* Efecto hover para dar profundidad a la tarjeta */
@@ -272,4 +278,47 @@ hr {
 /* Efecto de zoom al hacer hover sobre los íconos sociales */
 .social-icons img:hover {
   transform: scale(1.2);
+}
+
+/*Carrusel automatico*/
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 400%; /* 4 items * 100% */
+  animation: slide 16s infinite; /* 4s per slide, 16s total */
+  transition: transform 0.5s ease; /* smooth transition */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  } /* 0% First image is visible. */ 
+  25% {
+    transform: translateX(0);
+  } /* 25% First image is still visible.*/
+  50% {
+    transform: translateX(-100%);
+  } /* 25% + 25% = 50% Second image is visible.*/
+  75% {
+    transform: translateX(-200%);
+  } /* 25% + 25% + 25% = 75% Third image is visible.*/
+  100% {
+    transform: translateX(-300%);
+  } /* 25% + 25% + 25% + 25% = 100% Fourth image is visible.*/
 }

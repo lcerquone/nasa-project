@@ -26,9 +26,9 @@
             <li class="has-submenu">
               <a href="#">Divulgaciones</a>
               <ul class="submenu">
-                <li><a href="#feature-one">Foto del día</a></li>
+                <li><a href="#feature-one">Astronomicon</a></li>
                 <li><a href="#feature-two">Misiones</a></li>
-                <li><a href="#feature-three">Exoplanetas</a></li>
+                <li><a href="#feature-three">Links de interes</a></li>
               </ul>
             </li>
             <li><a href="#">Contacto</a></li>
@@ -52,6 +52,7 @@
 
       <!-- Sección de contenido destacado -->
       <section class="section-features" id="articles">
+        <h2 id="feature-one">Astronomicon</h2>
         <div class="container-features">
           <!-- Artículo destacado -->
           <article class="feature" id="feature-one">
@@ -110,7 +111,7 @@
             </div>
           </article>
           <!-- Artículo destacado -->
-          <article class="feature" id="feature-three">
+          <article class="feature">
             <h2>Archivo de Exoplanetas de la NASA</h2>
             <hr />
             <div class="card">
@@ -138,16 +139,6 @@
                 </p>
               </div>
             </div>
-          </article>
-          <!-- Artículo destacado -->
-          <article class="feature">
-            <h3>Seccion 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo
-              nisi ea dolore eligendi, id praesentium nesciunt qui. Ducimus
-              veritatis consequatur cumque dolore aspernatur, sunt ipsa incidunt
-              animi minus aut.
-            </p>
           </article>
         </div>
       </section>
@@ -205,11 +196,30 @@
           </a>
         </div>
       </section>
+
+      <!-- Seccion de Carrusel automatico -->
+      <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="images/saturno.jpg" alt="Saturno con sus anillos">
+            </div>
+            <div class="carousel-item">
+                <img src="images/mars.jpg" alt="Marte y sus polos con agua congelada">
+            </div>
+            <div class="carousel-item">
+              <img src="images/jupiter.jpg" alt="Jupiter">
+            </div>
+            <!-- Se repite la primera imagen para que la transicion sea suave-->
+            <div class="carousel-item">
+              <img src="images/saturno.jpg" alt="Saturno con sus anillos">
+            </div>
+        </section>
+    </div>
     </main>
 
     <!-- Pie de página -->
     <footer>
-      <div class="container">
+      <div class="container"  id="feature-three">
         <p>Todos los derechos reservados.</p>
         <div class="social-icons">
           <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
