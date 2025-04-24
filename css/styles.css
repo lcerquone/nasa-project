@@ -1,20 +1,20 @@
-/* Agregar que hace */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* Uso de border-box para que se adapten bien las dimensiones y respete la estructura de la página */
+/* Establece el modelo de caja para todos los elementos y quita márgenes y padding por defecto */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Agregar que hace */
+/* Establece comportamiento de desplazamiento suave al navegar con anclas internas 
+   y deja espacio superior para que no se oculte el contenido debajo del header sticky */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 }
 
-/* Uso de la fuente Poppins proporcionada por Google */
+/* Aplica la fuente Poppins a todo el cuerpo y define estilos base */
 body {
   font-family: "Poppins";
   line-height: 1.6;
@@ -22,7 +22,7 @@ body {
   color: #333;
 }
 
-/* Agregar que hace */
+/* Contenedor principal con margen lateral automático y padding vertical */
 .container {
   width: 90%;
   max-width: 100%;
@@ -30,7 +30,7 @@ body {
   padding: 0.5rem 0;
 }
 
-/* Agregar que hace */
+/* Contenedor de la sección principal con padding amplio y diseño columnar */
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
   padding: 3rem 6rem;
 }
 
-/* Uso de sticky header para la página usando el position*/
+/* Encabezado fijo en la parte superior con fondo oscuro y sombra */
 header {
   position: sticky;
   top: 0;
@@ -51,16 +51,16 @@ header {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-/* Agregar que hace */
+/* Distribuye el contenido del encabezado en dos columnas */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Agregar que hace */
+/* Sección principal con imagen de fondo y superposición oscura */
 .hero {
-  background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/mars-2051748_640.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/mars-2051748_640.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +69,7 @@ header .container {
   text-align: center;
 }
 
-/* Agregar que hace */
+/* Botón con fondo blanco, color destacado y diseño redondeado */
 .btn {
   display: inline-block;
   margin-top: 2%;
@@ -81,7 +81,7 @@ header .container {
   font-weight: bold;
 }
 
-/* Agregar que hace */
+/* Contenedor para sección de características en formato de columna centrada */
 .section-features {
   display: flex;
   padding: 0.5rem;
@@ -90,21 +90,21 @@ header .container {
   align-items: center;
 }
 
-/* Uso de flex-box con dirección en fila para poder agregar 2 columnas a la estructura */
+/* Contenedor de dos columnas usando Flexbox */
 .container-features {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* With de 50% para que se creen 2 columnas */
+/* Define ancho del 50% para lograr 2 columnas */
 .feature {
   padding: 2rem 4rem;
   width: 50%;
   text-align: justify;
 }
 
-/* Agregar que hace */
+/* Pie de página con fondo oscuro, texto claro y centrado */
 footer {
   background: #333;
   color: #ccc;
@@ -112,31 +112,32 @@ footer {
   padding: 1rem 0;
 }
 
-/* Agregar que hace */
+/* Imagen dentro de una tarjeta con altura fija y bordes redondeados */
 .card-img {
   width: 100%;
   height: 300px;
   border-radius: 5px 5px 0 0;
 }
 
+/* Tarjeta con sombra y bordes redondeados */
 .card {
-  /* Uso de sombras para crear el efecto deseado en la "card" */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
+  height: 90%;
 }
 
-/* El mouse encima de las "card" hace que se agregue una sombra */
+/* Efecto hover para dar profundidad a la tarjeta */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Agregar que hace */
+/* Contenedor interno de la tarjeta con padding */
 .card-container {
   padding: 16px 24px;
 }
 
-/* Agregar que hace */
+/* Línea divisoria gris */
 hr {
   border: 0;
   height: 2px;
@@ -144,7 +145,7 @@ hr {
   margin: 20px 0;
 }
 
-/* Agregar que hace */
+/* Menú de navegación horizontal sin viñetas */
 .menu {
   list-style: none;
   display: flex;
@@ -152,12 +153,12 @@ hr {
   padding: 0;
 }
 
-/* Agregar que hace */
+/* Elemento de lista relativo para manejar submenús */
 .menu li {
   position: relative;
 }
 
-/* Agregar que hace */
+/* Estilo base de los enlaces del menú */
 .menu a {
   color: white;
   text-decoration: none;
@@ -165,12 +166,12 @@ hr {
   display: block;
 }
 
-/* Agregar que hace */
+/* Color de fondo al pasar el mouse sobre el enlace */
 .menu a:hover {
   background: #555;
 }
 
-/* Uso de submenu desplegable */
+/* Submenú oculto inicialmente, aparece al hacer hover */
 .has-submenu .submenu {
   display: none;
   position: absolute;
@@ -185,36 +186,37 @@ hr {
   z-index: 1001;
 }
 
-/* Agregar que hace */
+/* Muestra el submenú al pasar el mouse */
 .has-submenu:hover .submenu {
   display: block;
 }
 
-/* Agregar que hace */
+/* Estilo de los enlaces dentro del submenú */
 .submenu li a {
   padding: 0.75rem 1rem;
   color: white;
   white-space: nowrap;
 }
 
-/* Al hacer hover agrega un color de fondo a la etiqueta a del li */
+/* Fondo más oscuro al hacer hover en el submenú */
 .submenu li a:hover {
   background: #666;
 }
 
-/* Sección 5 en tres columnas usando Flexbox */
+/* Sección con estructura en tres columnas */
 .feature-flex {
   padding: 3rem 2rem;
   text-align: center;
 }
 
+/* Título de la sección de tres columnas */
 .feature-flex h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #333;
 }
 
-/* Contenedor con Flexbox */
+/* Contenedor flexible con espacio entre tarjetas */
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -224,22 +226,25 @@ hr {
   margin: 0 auto;
 }
 
-/* Tarjeta individual */
+/* Tarjeta individual con fondo blanco y efecto hover */
 .flex-card {
+  text-decoration: none;
+  color: inherit;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   width: 30%;
   min-width: 280px;
-  box-sizing: border-box;
   transition: transform 0.3s ease;
 }
 
+/* Levanta la tarjeta ligeramente al pasar el mouse */
 .flex-card:hover {
   transform: translateY(-5px);
 }
 
+/* Imagen dentro de la tarjeta con borde redondeado y altura fija */
 .flex-card img {
   width: 100%;
   height: 200px;
@@ -247,4 +252,24 @@ hr {
   border-radius: 5px;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+
+/* Contenedor de íconos de redes sociales, centrado y con espacio entre ellos */
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Estilo de los íconos sociales con animación al pasar el mouse */
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+/* Efecto de zoom al hacer hover sobre los íconos sociales */
+.social-icons img:hover {
+  transform: scale(1.2);
 }

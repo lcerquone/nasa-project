@@ -54,9 +54,6 @@
       <section class="section-features" id="articles">
         <div class="container-features">
           <!-- Artículo destacado -->
-          <!--Usar Cards como en este article para todos los articles class="feature"-->
-          <!--Cambiar y quitar el link de enlace desde los articulos hacia las secciones-->
-          <!--Hacer 2 secciones más-->
           <article class="feature" id="feature-one">
             <h2>Foto astronómica del dia</h2>
             <hr />
@@ -159,34 +156,53 @@
       <section class="feature-flex">
         <h2 id="feature-two">Misiones espaciales destacadas</h2>
         <div class="flex-container">
-          <div class="flex-card">
-            <h3>Apollo 11</h3>
-            <hr />
-            <img src="images/apolo-11.jpg" alt="Apollo 11" />
-            <p>
-              La histórica misión de 1969 que llevó a los primeros humanos a la
-              Luna. Neil Armstrong y Buzz Aldrin caminaron sobre la superficie
-              lunar.
-            </p>
-          </div>
-          <div class="flex-card">
-            <h3>Curiosity</h3>
-            <hr />
-            <img src="images/rover.jpg" alt="Rover Curiosity" />
-            <p>
-              El rover de la NASA que explora Marte desde 2012, estudiando la
-              geología y buscando señales de vida pasada en el planeta rojo.
-            </p>
-          </div>
-          <div class="flex-card">
-            <h3>Juno</h3>
-            <hr />
-            <img src="images/juno.jpg" alt="Juno" />
-            <p>
-              Misión lanzada en 2011 para estudiar Júpiter: su composición,
-              campo gravitacional, magnético y auroras, desde una órbita polar.
-            </p>
-          </div>
+          <a
+            class="flex-card"
+            href="https://www.nasa.gov/mission/apollo-11/"
+            target="_blank"
+          >
+            <article>
+              <h3>Apollo 11</h3>
+              <hr />
+              <img src="images/apolo-11.jpg" alt="Apollo 11" />
+              <p>
+                La histórica misión de 1969 que llevó a los primeros humanos a
+                la Luna. Neil Armstrong y Buzz Aldrin caminaron sobre la
+                superficie lunar.
+              </p>
+            </article>
+          </a>
+          <a
+            class="flex-card"
+            href="https://science.nasa.gov/mission/msl-curiosity/"
+            target="_blank"
+          >
+            <article>
+              <h3>Curiosity</h3>
+              <hr />
+              <img src="images/rover.jpg" alt="Rover Curiosity" />
+              <p>
+                El rover de la NASA que explora Marte desde 2012, estudiando la
+                geología y buscando señales de vida pasada en el planeta rojo.
+              </p>
+            </article>
+          </a>
+          <a
+            class="flex-card"
+            href="https://science.nasa.gov/mission/juno/"
+            target="_blank"
+          >
+            <article>
+              <h3>Juno</h3>
+              <hr />
+              <img src="images/juno.jpg" alt="Juno" />
+              <p>
+                Misión lanzada en 2011 para estudiar Júpiter: su composición,
+                campo gravitacional, magnético y auroras, desde una órbita
+                polar.
+              </p>
+            </article>
+          </a>
         </div>
       </section>
     </main>
@@ -195,6 +211,17 @@
     <footer>
       <div class="container">
         <p>Todos los derechos reservados.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook-icon.png" alt="Facebook" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="X">
+            <img src="images/x-icon.webp" alt="X (Twitter)" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <img src="images/instagram-icon.webp" alt="Instagram" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
