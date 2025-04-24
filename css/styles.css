@@ -104,7 +104,7 @@ header .container {
 
 /* Define ancho del 50% para lograr 2 columnas */
 .feature {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   width: 50%;
   text-align: justify;
 }
@@ -215,8 +215,9 @@ hr {
   text-align: center;
 }
 
-/* Título de la sección de tres columnas */
-.feature-flex h2 {
+/* Título de las secciones */
+.title {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #333;
@@ -308,7 +309,7 @@ hr {
 @keyframes slide {
   0% {
     transform: translateX(0);
-  } /* 0% First image is visible. */ 
+  } /* 0% First image is visible. */
   25% {
     transform: translateX(0);
   } /* 25% First image is still visible.*/
