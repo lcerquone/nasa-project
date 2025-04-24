@@ -11,7 +11,7 @@
    y deja espacio superior para que no se oculte el contenido debajo del header sticky */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 6rem;
 }
 
 /* Aplica la fuente Poppins a todo el cuerpo y define estilos base */
@@ -351,7 +351,6 @@ hr {
 .space-station-tour .tour-button:active {
   transform: translateY(0);
 }
-
 
 /*Carrusel automatico*/
 .carousel {
