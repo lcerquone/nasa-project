@@ -304,7 +304,8 @@ hr {
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 30rem;
+  object-fit: cover;
   display: block;
 }
 
