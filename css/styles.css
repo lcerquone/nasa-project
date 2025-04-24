@@ -371,12 +371,11 @@ hr {
   position: relative;
 }
 
-/* ESPANOL */
 .carousel-inner {
   display: flex;
-  width: 400%; /* 4 items * 100% */
-  animation: slide 16s infinite; /* 4s per slide, 16s total */
-  transition: transform 0.5s ease; /* smooth transition */
+  width: 400%; /* 4 elementos * 100% */
+  animation: slide 16s infinite; /* 4s por elementos, 16s en total */
+  transition: transform 0.5s ease; /* transición suave */
 }
 
 .carousel-item {
@@ -390,21 +389,20 @@ hr {
   display: block;
 }
 
-/* ESPANOL */
 @keyframes slide {
   0% {
     transform: translateX(0);
-  } /* 0% First image is visible. */
+  } /* 0% La primera imgagen es visible. */
   25% {
     transform: translateX(0);
-  } /* 25% First image is still visible.*/
+  } /* 25% La primera imagen todavia es visible.*/
   50% {
     transform: translateX(-100%);
-  } /* 25% + 25% = 50% Second image is visible.*/
+  } /* 25% + 25% = 50% La segunda imagen es visible.*/
   75% {
     transform: translateX(-200%);
-  } /* 25% + 25% + 25% = 75% Third image is visible.*/
+  } /* 25% + 25% + 25% = 75% La tercera imagen es visible.*/
   100% {
     transform: translateX(-300%);
-  } /* 25% + 25% + 25% + 25% = 100% Fourth image is visible.*/
+  } /* 25% + 25% + 25% + 25% = 100% La cuarta imagen es visible.*/
 }
