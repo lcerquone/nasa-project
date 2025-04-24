@@ -281,6 +281,77 @@ hr {
   transform: scale(1.2);
 }
 
+
+/* Sección del tour de la estación espacial */
+.space-station-tour {
+  background-image: url(../images/astronauta_rubio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.space-station-tour .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-station-tour .content-box {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.space-station-tour h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.space-station-tour p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.space-station-tour .tour-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background-color: #1e88e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.space-station-tour .tour-button:hover {
+  background-color: transparent;
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+.space-station-tour .tour-button:active {
+  transform: translateY(0);
+}
+
+
 /*Carrusel automatico*/
 .carousel {
   display: flex;
