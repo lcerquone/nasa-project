@@ -220,7 +220,6 @@ hr {
 /* Título de las secciones */
 .title {
   margin-top: 2rem;
-  margin-bottom: 2rem;
   font-size: 2rem;
   color: #333;
 }
@@ -232,7 +231,7 @@ hr {
   flex-wrap: wrap;
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 /* Tarjeta individual con fondo blanco y efecto hover */
