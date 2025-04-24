@@ -282,7 +282,6 @@ hr {
   transform: scale(1.2);
 }
 
-
 /* Sección del tour de la estación espacial */
 .space-station-tour {
   background-image: url(../images/astronauta_rubio.jpg);
@@ -294,9 +293,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin-top: 40px;
 }
 
+/* Capa superpuesta oscura semitransparente sobre la sección de la estación espacial.
+   Centra el contenido dentro del contenedor usando flexbox. */
 .space-station-tour .overlay {
   position: absolute;
   top: 0;
@@ -309,6 +310,8 @@ hr {
   justify-content: center;
 }
 
+/* Contenedor del contenido textual dentro de la sección.
+     Centra el texto, aplica color blanco y limita el ancho. */
 .space-station-tour .content-box {
   text-align: center;
   color: white;
@@ -317,18 +320,24 @@ hr {
   z-index: 1;
 }
 
+/* Estilo del título principal en la sección.
+     Aumenta el tamaño de fuente y aplica sombra para mejorar la legibilidad. */
 .space-station-tour h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilo para el párrafo descriptivo.
+     Ajusta el tamaño de fuente, interlineado y sombra de texto. */
 .space-station-tour p {
   font-size: 1.2em;
   line-height: 1.6;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Botón para iniciar el tour.
+     Estilo visual llamativo con colores, padding y transición para efectos de hover. */
 .space-station-tour .tour-button {
   display: inline-block;
   margin-top: 25px;
@@ -342,12 +351,14 @@ hr {
   border: 2px solid transparent;
 }
 
+/* Efecto hover del botón: cambia el fondo y aplica transformación leve. */
 .space-station-tour .tour-button:hover {
   background-color: transparent;
   border-color: white;
   transform: translateY(-2px);
 }
 
+/* Estado activo (clic) del botón: revierte la transformación. */
 .space-station-tour .tour-button:active {
   transform: translateY(0);
 }
