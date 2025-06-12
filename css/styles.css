@@ -268,6 +268,9 @@ hr {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  list-style: none; /* Oculta los puntos de la lista */
+  padding: 0;       /* Quita el padding por defecto del ul */
+  margin: 1rem 0 0 0; /* Mantiene el margen superior */
 }
 
 /* Estilo de los íconos sociales con animación al pasar el mouse */
