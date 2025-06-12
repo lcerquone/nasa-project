@@ -363,7 +363,7 @@ hr {
   transform: translateY(0);
 }
 
-/*Carrusel automatico*/
+/*Carrusel manual*/
 .carousel {
   display: flex;
   overflow: hidden;
@@ -373,9 +373,7 @@ hr {
 
 .carousel-inner {
   display: flex;
-  width: 400%; /* 4 elementos * 100% */
-  animation: slide 16s infinite; /* 4s por elementos, 16s en total */
-  transition: transform 0.5s ease; /* transición suave */
+  transition: transform 0.5s ease-in-out; /* transición suave */
 }
 
 .carousel-item {
@@ -389,20 +387,48 @@ hr {
   display: block;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  } /* 0% La primera imgagen es visible. */
-  25% {
-    transform: translateX(0);
-  } /* 25% La primera imagen todavia es visible.*/
-  50% {
-    transform: translateX(-100%);
-  } /* 25% + 25% = 50% La segunda imagen es visible.*/
-  75% {
-    transform: translateX(-200%);
-  } /* 25% + 25% + 25% = 75% La tercera imagen es visible.*/
-  100% {
-    transform: translateX(-300%);
-  } /* 25% + 25% + 25% + 25% = 100% La cuarta imagen es visible.*/
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 15px; /* Spacing on sides */
+}
+
+.carousel-control {
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background for controls */
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%; /* Round buttons */
+  transition: background-color 0.3s ease; /* Only transitions background color */
+  outline: none; /* Removes outline on click */
+}
+
+.carousel-control:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Only changes background color */
+}
+
+.carousel-control:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+  .carousel-item {
+    height: 300px; /* Smaller height on mobile devices */
+  }
+  .carousel-control {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
 }
