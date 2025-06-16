@@ -23,7 +23,7 @@ function renderEstacionEspacial() {
     "https://plus.nasa.gov/video/un-tour-de-la-estacion-espacial-con-el-astronauta-frank-rubio/";
   link.className = "tour-button";
   link.target = "_blank";
-  link.textContent = "Explorar la estacion";
+  link.textContent = "Explorar la estación";
 
   // Ensamblar
   contentBox.appendChild(title);
