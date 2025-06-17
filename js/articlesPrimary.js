@@ -111,11 +111,73 @@ espectaculares auroras boreales y australes.`,
     h3.textContent = feature.subtitulo;
 
     const p = document.createElement("p");
-    p.textContent = feature.descripcion;
+    // Crear botón "Ver más"
+    const toggleBtn = document.createElement("button");
+    toggleBtn.textContent = "Ver más";
+    toggleBtn.className = "toggle-btn";
+
+    // Mostrar solo la mitad del texto
+    const fullText = feature.descripcion;
+    const halfLength = Math.floor(fullText.length / 2);
+    const shortText = fullText.substring(0, halfLength) + "...";
+
+    let expanded = false;
+    p.textContent = shortText;
+
+    // Estilo desde JavaScript
+    toggleBtn.style.marginTop = "1rem";
+    toggleBtn.style.backgroundColor = "#1e88e5";
+    toggleBtn.style.color = "#fff";
+    toggleBtn.style.border = "none";
+    toggleBtn.style.padding = "0.6rem 1.2rem";
+    toggleBtn.style.fontSize = "1rem";
+    toggleBtn.style.fontWeight = "bold";
+    toggleBtn.style.borderRadius = "0.5rem";
+    toggleBtn.style.cursor = "pointer";
+    toggleBtn.style.transition =
+      "background-color 0.3s ease, transform 0.2s ease";
+    toggleBtn.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+
+    toggleBtn.addEventListener("click", () => {
+      expanded = !expanded;
+      p.textContent = expanded ? fullText : shortText;
+      toggleBtn.textContent = expanded ? "Ver menos" : "Ver más";
+      toggleBtn.style.backgroundColor = expanded ? "#bdbdbd" : "#1e88e5";
+    });
+
+    // Hover y active con JavaScript (usando eventos)
+    toggleBtn.addEventListener("mouseover", () => {
+      toggleBtn.style.backgroundColor = expanded ? "#65696e" : "#0d6efd";
+      toggleBtn.style.transform = "translateY(-2px)";
+    });
+    toggleBtn.addEventListener("mouseout", () => {
+      toggleBtn.style.backgroundColor = expanded ? "#bdbdbd" : "#1e88e5";
+      toggleBtn.style.transform = "translateY(0)";
+    });
+    toggleBtn.addEventListener("mousedown", () => {
+      toggleBtn.style.transform = "scale(0.98)";
+      toggleBtn.style.boxShadow = "0 2px 6px rgba(0, 0, 0, 0.15)";
+    });
+    toggleBtn.addEventListener("mouseup", () => {
+      toggleBtn.style.transform = "translateY(-2px)";
+      toggleBtn.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+    });
+
+    // Contenedor del botón centrado
+    const buttonWrapper = document.createElement("div");
+    buttonWrapper.style.display = "flex";
+    buttonWrapper.style.justifyContent = "center";
+    buttonWrapper.style.marginTop = "1rem";
 
     // Estructura final
     cardContainer.appendChild(h3);
     cardContainer.appendChild(p);
+
+    // Agregar el botón al contenedor
+    buttonWrapper.appendChild(toggleBtn);
+
+    // Agregar el contenedor al cardContainer
+    cardContainer.appendChild(buttonWrapper);
 
     card.appendChild(a);
     card.appendChild(cardContainer);

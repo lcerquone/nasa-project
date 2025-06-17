@@ -60,18 +60,25 @@ header .container {
 
 /* Sección principal con imagen de fondo y superposición oscura */
 .hero {
+  position: relative;
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.6)
     ),
     url(../images/mars-2051748_640.png);
+  transition: background-image 0.5s ease-in-out;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   padding: 4rem 0;
   text-align: center;
+}
+
+.hero.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /* Botón con fondo blanco, color destacado y diseño redondeado */

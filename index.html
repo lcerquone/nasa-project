@@ -49,6 +49,7 @@
             astronómicos proporcionados por la NASA.
           </p>
         </div>
+        <button id="changeBackgroundBtn" title="Cambiar fondo">🔭</button>
       </section>
 
       <!-- Sección de contenido destacado -->
@@ -66,20 +67,20 @@
       <section class="feature-flex" id="misiones">
         <h2 class="title">Misiones espaciales destacadas</h2>
         <div class="flex-container">
-          
+          <!-- Los artículos se cargarán aquí dinámicamente desde JS -->
         </div>
       </section>
 
       <!-- Seccion de Carrusel manual -->
-<div class="carousel" id="sistema-solar">
-  <div class="carousel-inner">
-    <!-- Las imágenes del carrusel se cargarán aquí dinámicamente -->
-  </div>
-  <div class="carousel-controls">
-      <button id="prevBtn" class="carousel-control">❮</button>
-      <button id="nextBtn" class="carousel-control">❯</button>
-  </div>
-</div>
+      <div class="carousel" id="sistema-solar">
+        <div class="carousel-inner">
+          <!-- Las imágenes del carrusel se cargarán aquí dinámicamente -->
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn" class="carousel-control">❮</button>
+          <button id="nextBtn" class="carousel-control">❯</button>
+        </div>
+      </div>
     </main>
 
     <!-- Pie de página -->
@@ -88,17 +89,25 @@
         <p>Todos los derechos reservados.</p>
         <ul class="social-icons">
           <li>
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/NASA/"
+              target="_blank"
+              aria-label="Facebook"
+            >
               <img src="images/facebook-icon.png" alt="Facebook">
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com" target="_blank" aria-label="X">
+            <a href="https://x.com/NASA" target="_blank" aria-label="X">
               <img src="images/x-icon.webp" alt="X (Twitter)">
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/nasa/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <img src="images/instagram-icon.webp" alt="Instagram">
             </a>
           </li>
@@ -109,5 +118,6 @@
     <script src="js/articlesPrimary.js" defer></script>
     <script src="js/articlesSecundary.js" defer></script>
     <script src="js/spaceStation.js" defer></script>
+    <script src="js/heroSection.js" defer></script>
   </body>
 </html>

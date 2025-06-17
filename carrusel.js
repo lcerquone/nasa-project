@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
       src: "images/jupiter.jpg",
       alt: "Jupiter",
     },
-    // Example: Add a new image
-    // {
-    //   src: "images/neptuno.jpg",
-    //   alt: "Neptuno",
-    // }
   ];
 
   // --- Select DOM elements ---
