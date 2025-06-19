@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     changeBtn.style.transform = "scale(1)";
   });
 
-  // Active
   changeBtn.addEventListener("mousedown", () => {
     changeBtn.style.transform = "scale(0.95)";
     changeBtn.style.boxShadow = "0 2px 5px rgba(0,0,0,0.2)";
